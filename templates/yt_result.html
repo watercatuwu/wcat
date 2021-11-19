@@ -44,18 +44,24 @@
                   <div class="col">
                 </div>
             </div>
-            
-            <form class="row" action="{{url_for('submit')}}" method="post" style="padding-top:50px">
-                <div class="col-3">
+            <div class="row" style="padding-top: 50px">
+                <div class="col"></div>
+                <div class="card mb-3">
+                    <div class="row g-0" style="padding: 20px;">
+                      <div class="col-md-4">
+                        <img src="{{ thumbnail }}" class="img-fluid rounded-start" alt="..." width="100%" height="100%" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ title }}</h5>
+                          <p class="card-text">{{ author }}</p>
+                          <button type="button" class="btn btn-success btn-lg">Download</button>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="col-6 ">
-                    <input name="url" id="url" type="text" class="form-control shadow rounded" placeholder="URL">
-                </div>
-                <div class="col-3">
-                    <button type="submit" class="btn btn-primary shadow rounded">送出</button>
-                </div>
-            </form>
+                <div class="col"></div>
+            </div>
         </div>
-
     </body>
 </html>
