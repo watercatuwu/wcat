@@ -7,8 +7,6 @@ import download as dl
 #server(flask)
 app = Flask(__name__, static_folder="./assets")
 
-port = int(os.environ.get('PORT', 33507))
-
 @app.route('/')
 def index():
     return render_template('yt.html')
@@ -21,4 +19,4 @@ def submit():
     return render_template('yt_result.html',author=yt.author,title=yt.title,thumbnail=yt.thumbnail_url,mp3=F"video/{yt.title}.mp3",mp4=F"video/{yt.title}.mp4")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=5000)
