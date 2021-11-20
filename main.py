@@ -19,4 +19,4 @@ def submit():
     return render_template('yt_result.html',author=yt.author,title=yt.title,thumbnail=yt.thumbnail_url,mp3=F"video/{yt.title}.mp3",mp4=F"video/{yt.title}.mp4")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=80)
