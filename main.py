@@ -7,7 +7,7 @@ import download as dl
 #server(flask)
 app = Flask(__name__, static_folder="./assets")
 
-port = int(os.environ.get('PORT', 8080))
+port = int(os.environ.get('PORT', 33507))
 
 @app.route('/')
 def index():
