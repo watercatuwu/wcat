@@ -32,10 +32,13 @@ def submit():
 def dashboard():
     file_size = 0
     path = 'assets/video'
-    for fileName in os.listdir(path):
-        file_size += os.path.getsize(path+'/'+fileName)
-    file_size = round(file_size/1048576, 2)
-    print(file_size, "mb")
+    try:
+        for fileName in os.listdir(path):
+            file_size += os.path.getsize(path+'/'+fileName)
+        ile_size = round(file_size/1048576, 2)
+        print(file_size, "mb")
+    except:
+        file_size = 0
     return render_template('dashboard.html',file_size=file_size)
 
 if __name__ == '__main__':
