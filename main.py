@@ -35,7 +35,7 @@ def dashboard():
     try:
         for fileName in os.listdir(path):
             file_size += os.path.getsize(path+'/'+fileName)
-        ile_size = round(file_size/1048576, 2)
+        file_size = round(file_size/1048576, 2)
         print(file_size, "mb")
     except:
         file_size = 0
