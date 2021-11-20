@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube downloader</title>
+        <link rel="icon" href="assets/img/nav-ssrb.svg" type="image/x-icon" />
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--css-->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <!--js-->
+        <script src="/assets/js/scripts.js"></script> 
+    </head>
+    <body style="padding:20px; background-color: rgb(249, 249, 251)">
+        <div style="padding-bottom:100px">
+          <nav class="navbar-expand-lg navbar navbar-light bg-light shadow p-3 rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" style="font-weight:bold;">
+                    <img src="/assets/img/nav-ssrb.svg" alt="" height="28" class="d-inline-block align-text-top">
+                    WaterCat
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" href="#">YT downloader</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                  </div>
+                  <div class="col col-md-auto">
+                    <h1 style="font-weight:bold;">
+                        <img src="/assets/img/ssrb.png" width="100">
+                        Dashboard
+                    </h1>
+                  </div>
+                  <div class="col">
+                </div>
+            </div>
+            <div class="row" style="padding-top: 50px;">
+              <div class="col"></div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    影片&音檔 已占用
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <h3>{{ file_size }} MB</h3>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+        </div>
+    </body>
+</html>
