@@ -56,18 +56,13 @@
                     <input name="url" id="url" type="text" class="form-control shadow rounded" placeholder="URL">
                 </div>
                 <div class="col-3">
-                    <button type="" class="btn btn-primary shadow rounded">送出</button>
-                    <script>
-                      $('button').click(function(){
-                        $('#card').css('', '')
-                      });
-                    </script>
+                    <button type="submit" class="btn btn-primary shadow rounded" onclick="document.getElementById('card').style.visibility='visible'">送出</button>
                 </div>
             </form>
-            <div class="row" style="padding-top: 50px">
+            <div id="card" class="row" style="padding-top: 50px; visibility:hidden">
               <div class="col-3"></div>
               <div class="col-6">
-                <div class="card">
+                <div class="card shadow rounded">
                   <div class="card-body" style="padding: 30px">
                     <h5 class="card-title">下載中...</h5>
                     <h6 class="card-subtitle mb-2 text-muted">修但幾咧...</h6>
@@ -81,4 +76,5 @@
           </div>
         </div>
     </body>
+
 </html>
