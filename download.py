@@ -15,7 +15,8 @@ def mp3(url):
     print(F"Download {title}...")
     stream = yt.streams.get_highest_resolution()
     stream.download(output_path="./assets/video")
-    print("done.")
+    file_size = round(stream.filesize/1048576, 2)
+    print(F"{file_size}MB,done.")
 
     #mp3
     print(F"audio convert...")
